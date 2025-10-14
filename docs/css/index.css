@@ -1,0 +1,90 @@
+body {
+      padding: 0;
+    margin: 0;
+}
+
+header {
+background-color: #c099d3;
+}
+.header-left,
+.header-right {
+  text-align: left;
+  padding-left: 1%;
+  padding-top: .5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+h1{
+    color: #69417dff;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 400%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color:#69417dff; 
+  height: 100px; 
+  clip-path: polygon(45% 0%, 55% 0%, 60% 30%, 100% 30%, 100% 100%, 0 100%, 0 30%, 40% 30%);
+  overflow: visible;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+.navbar a {
+font-size: 40%;
+color:#c099d3;
+margin-top: 40px;
+width: 20%;
+}
+
+.dropdown .dropbtn {
+  font-size: 32px;
+  margin: 0px;
+  color: white;
+  background-color: #69417dff;
+  font-family: 'Courier New', Courier, monospace;
+  align-self: 10%;
+  border: none;
+  display: inline-block; 
+  position: relative;    
+  clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 0% 100%, 0 15%);
+}
+.dropdown:hover .dropbtn {
+  background-color: #69417dff;
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #69417dff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  font-size: 24x;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: rgba(138, 13, 196, 0.735);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
