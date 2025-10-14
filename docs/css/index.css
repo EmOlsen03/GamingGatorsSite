@@ -1,6 +1,7 @@
 body {
       padding: 0;
     margin: 0;
+    background-color: #c099d3;
 }
 
 header {
@@ -17,7 +18,8 @@ background-color: #c099d3;
 h1{
     color: #69417dff;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 400%;
+    text-shadow: -1.5px -1.5px 0 white, 1.5px -1.5px 0 white, -1.5px 1.5px 0 white, 1.5px 1.5px 0 white;
+    font-size: 100px;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -30,11 +32,22 @@ h1{
   margin-left: auto;
   margin-right: auto;
 }
-
-.navbar {
+.bumpContainer{
+  position: relative;
+  height: 300px;
+}
+.bumpShape {
+  background-color:White; 
+  height: 123px;
+  clip-path: polygon(40% 0%, 60% 0%, 70% 27%, 100% 27%, 100% 100%, 0 100%, 0 27%, 30% 27%);
+}.bumpShapeInside {
   background-color:#69417dff; 
-  height: 100px; 
-  clip-path: polygon(45% 0%, 55% 0%, 60% 30%, 100% 30%, 100% 100%, 0 100%, 0 30%, 40% 30%);
+  height: 120px;
+  clip-path: polygon(40% 2%, 60% 2%, 70% 30%, 100% 30%, 100% 100%, 0 100%, 0 30%, 30% 30%);
+}
+.navbar {
+  outline-color: white;
+  height: 120px; 
   overflow: visible;
   width:100%;
   display: flex;
@@ -43,9 +56,12 @@ h1{
   vertical-align: text-bottom;
 }
 .navbar a {
+font-family: 'Rubik Mono One', sans-serif;
+text-shadow: -1.5px -1.5px 0 white, 1.5px -1.5px 0 white, -1.5px 1.5px 0 white, 1.5px 1.5px 0 white;
+text-decoration: none;
 font-size: 40%;
 color:#c099d3;
-margin-top: 40px;
+margin-top: 55px;
 width: 20%;
 }
 
@@ -87,4 +103,9 @@ width: 20%;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+.main{
+  background-color: #c099d3;
 }
